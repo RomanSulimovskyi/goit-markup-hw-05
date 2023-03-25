@@ -211,6 +211,7 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about {
@@ -338,6 +339,7 @@ ul {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-desc {
@@ -367,6 +369,7 @@ ul {
 
 .socials-link:hover {
   background-color: var(--pressed-state);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-content {
@@ -396,11 +399,9 @@ ul {
 }
 
 .link-list a:hover {
-  border-color: var(--pressed-state);
-}
-
-.link-list a:hover {
   fill: var(--pressed-state);
+  border-color: var(--pressed-state);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-business {
@@ -485,6 +486,7 @@ header {
 .button-link:hover {
   background: var(--pressed-state);
   color: var(--white-background);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-link {
@@ -610,6 +612,7 @@ header {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .img-no-gap {
   display: block;
@@ -633,9 +636,14 @@ header {
   background: rgba(46, 47, 66, 0.4);
 }
 
+.backdrop {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
