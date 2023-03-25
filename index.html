@@ -69,7 +69,7 @@
             for Your Business
           </h1>
           <div class="ban-btn">
-            <button type="button" class="banner-button">
+            <button type="button" class="banner-button" data-modal-open>
               Order Service
             </button>
           </div>
@@ -411,14 +411,13 @@
     <script src="./js/modal.js"></script>
   </body>
 
-     <div class="backdrop is-hidden">
-      <div class="modal">
-        <button data-modal-close class="button-modal" type="button">
-          <svg class="button-close" width="8" height="8">
-            <use href="./images/sprite-close.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button data-modal-close class="close" type="button">
+        <svg class="button-close" width="8" height="8">
+          <use href="./images/sprite-close.svg#icon-close"></use>
+        </svg>
+      </button>
     </div>
-
+  </div>
 </html>
